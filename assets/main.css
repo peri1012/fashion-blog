@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .container{
-    width:1500px;
+    width:1120px;
     margin: 0 auto;
 }
 .d-flex{
@@ -121,20 +121,34 @@ h6 span{
 .font-size-20{
     font-size:20px;
 }
-.button{
+nav a{
+    display: inline-block;
+    padding: 8px 16px;
+}
+nav a:hover{
+    background-color:#ccc;
+}
+.link a{
     border:none;
     padding: 8px 16px;
     background-color: grey;
-    opacity:0.6;
+    opacity: 0.6;
+    font-size:18px;
+    color:black;
+    transition: .3s ease;
+}
+.link a:hover{
+    color: #000;
+    background-color: #ccc;
 }
 .bg-white{
     background-color: white;
 }
 .bg-lightgrey{
-    background-color: #f1f1f1!important;
+    background-color: #f1f1f1;
 }
 .bg-darkgrey{
-    background-color: #616161!important;
+    background-color: #616161;
 }
 .main-box{
     width:100%;
@@ -173,18 +187,18 @@ h6 span{
     margin:40px 0;
 }
 .margin-right-16{
-    margin-right: 16px!important;
+    margin-right: 16px;
 }
 .margin-bottom-16{
-    margin-bottom: 16px!important;
+    margin-bottom: 16px;
 }
 .like{
     background-color: #fff;
-    border: 1px solid #ccc!important;
+    border: 1px solid #ccc;
     transition: .3s ease;
 }
 .like:hover{
-    background-color: #ccc!important;
+    background-color: #ccc;
 }
 .reply{
     background-color: black;
@@ -198,8 +212,8 @@ h6 span{
     color:black;
 }
 .reply:hover{
-    color: #000!important;
-    background-color: #ccc!important;
+    color: #000;
+    background-color: #ccc;
 }
 .box1-img img{
     display:block;
@@ -213,11 +227,11 @@ h6 span{
 }
 .posts ul li{
     background-color: #fff;
-    border-bottom: 1px solid #ccc!important;
+    border-bottom: 1px solid #ccc;
     transition: .3s ease;
 }
 .posts ul li:hover{
-    background-color:  #ccc!important;
+    background-color:  #ccc;
 }
 .advertise-content{
     height:200px;
@@ -264,10 +278,10 @@ input[type="email"]{
     margin-top: 16px;
 }
 .subscribe:hover{
-    color: #000!important;
-    background-color: #ccc!important;
+    color: #000;
+    background-color: #ccc;
 }
-@media only screen and (max-width: 960px) {
+@media (max-width: 960px) {
     .img-header{
         max-width: 100%;
         height:auto;
@@ -292,7 +306,7 @@ input[type="email"]{
         width:100%;
     }
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .bar-content{display: none;}
     .header-content{
         bottom:30%;
@@ -304,7 +318,7 @@ input[type="email"]{
         display: none;
     }
 }
-@media only screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
     .header-content{
         bottom:30%;
         font-size:30px;
